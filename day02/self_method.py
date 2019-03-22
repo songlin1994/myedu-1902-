@@ -67,4 +67,6 @@ if __name__ == '__main__':
         if i%2 != 0:
             nub = nub+i
     print(nub)
+    # 周末作业
+    # 写一个方法,传入两个 int参数, 将两个参数之间的 偶数加起来
 
