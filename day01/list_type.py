@@ -72,7 +72,12 @@ def reverse_demo():
     blist.reverse()
     print(blist)
 
-
+# 瞎写的
+def xiaxie(alist):
+    alist_5 = alist[4]
+    alist__1 = alist[-1]
+    alist[4]=alist__1
+    alist[-1] = alist_5
 # 列表/集合
 if __name__ == '__main__':
     alist = [4, 'ysl', '8', 7,6,2,5]
@@ -84,6 +89,9 @@ if __name__ == '__main__':
     # list_demo()
     # len_demo(alist)
     # pop_demo(alist)
-    orderBy_demo()
+    # orderBy_demo()
+    alist.append(9999)
 
+    # print(alist)
+    print(type(None))
 

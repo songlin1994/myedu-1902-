@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # 提取变量  ctrl+alt+V
     # 调用add方法 传入1, 2,得到返回值 ,赋值给result变量
     # 指定参数传参
-    # result = add(bint=2,aint=1)
+    result = add(bint=2,aint=1)
     # print(result)
     # 默认参数传参
     # add(2,1)
