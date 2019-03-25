@@ -37,8 +37,10 @@ def open_demo2():
     # 绝对路径 C:\Users\YSL\PycharmProjects\myedu\test.text
     # r 代表只读模式 ,不可写入
     text_io = open('../test.text', 'r')
+    # 读取第一行
     readline = text_io.readline()
     print(readline)
+    # 读取所有行 返回一个list对象
     readlines = text_io.readlines()
     print(readlines)
 
@@ -46,4 +48,5 @@ if __name__ == '__main__':
     # 相对路径 ../test.text
     # 绝对路径 C:\Users\YSL\PycharmProjects\myedu\test.text
     open_demo2()
+    # print('hello \n world')
     pass
