@@ -116,8 +116,13 @@ if __name__ == '__main__':
     #     # 会吧 alist 的索引 从 0到 4 取一边
     #     print(alist[i])
 
-    for i in alist:
-        print(i)
+    # for i in alist:
+    #     print(i)
 
+    a = 0
+    # while 语法: while(当) 条件 :  --> 条件为True 进入循环 ,直到 条件为 False
+    while a <5:
+        print('hello world')
+        a+=1
 
 

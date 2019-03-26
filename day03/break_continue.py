@@ -21,4 +21,21 @@ def continue_demo():
         print('')
 
 if __name__ == '__main__':
-    continue_demo()
+    # for i in range(5):
+    #     print(i)
+    #     if i == 3 :
+    #         # 终止所有循环
+    #         break
+    #     print('第%s次循环至最后一行代码\n'%i)
+
+    #
+    for i in range(5):
+        print(i)
+        if i == 3 :
+            # 终止本次循环
+            continue
+        # %s : 占位符   %i : i是变量 加百分号就是被替换的内容
+        print('第%s次循环至最后一行代码\n'%i)
+
+    # \n : 换行符
+    # print('aaaa\nbbb')

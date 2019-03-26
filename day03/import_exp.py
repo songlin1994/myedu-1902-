@@ -20,7 +20,7 @@ def open_demo():
     # 相对路径 ../test.text
     # 绝对路径 C:\Users\YSL\PycharmProjects\myedu\test.text
     # w+ 代表读写模式,写入时会覆盖 原文档内容
-    a = open('../test.text', 'w+')
+    a = open('test.text', 'w+')
     a.write("我呵呵呵呵呵呵")
 
 # open 方法演示
@@ -29,7 +29,7 @@ def open_demo1():
     # 绝对路径 C:\Users\YSL\PycharmProjects\myedu\test.text
     # a+ 代表读写模式,写入时不会覆盖 原文档内容,相当于追加内容
     text_io = open('../test.text', 'a+')
-    text_io.write("我呵呵呵呵呵呵")
+    text_io.write("\n我呵呵呵呵呵呵")
 
 # open 方法演示
 def open_demo2():
@@ -49,5 +49,6 @@ if __name__ == '__main__':
     # 绝对路径 C:\Users\YSL\PycharmProjects\myedu\test.text
     # open_demo2()
     # print('hello \n world')
-    os_demo()
+    # os_demo()
+    open_demo()
     pass
