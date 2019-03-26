@@ -1,17 +1,19 @@
 # 全局变量 和 局部变量 作用域不同,
+# list 的值 以 [ ]包裹的值就是list类型的值
 
 # 声明全局变量 blist
 blist = [7,8,33,2,1,3,4]
+
 
 def list_demo():
     # alist 是局部变量
     alist = [4, 'ysl', '8', 7]
 
     print(alist)
-    # 通过索引访问 元素
+    # 通过索引访问 元素 从0数
     print(alist[0])
     print(alist[1])
-    # 倒序访问
+    # 倒序访问  从 -1 数
     print(alist[-1])
     print(alist[-2])
     # 打印全局变量 并没有被传参blist
@@ -82,16 +84,16 @@ def xiaxie(alist):
 if __name__ == '__main__':
     alist = [4, 'ysl', '8', 7,6,2,5]
     # 这是方法调用了 局部变量 alist
-    # list_update1(blist)
+    # list_update(alist)
     # 这个方法调用了 全局变量 blist
     # list_update1(blist)
     # print(blist)
     # list_demo()
     # len_demo(alist)
-    # pop_demo(alist)
+    pop_demo(alist)
     # orderBy_demo()
-    alist.append(9999)
+    # alist.append(9999)
 
     # print(alist)
-    print(type(None))
+    # print(type(None))
 

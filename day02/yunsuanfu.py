@@ -7,6 +7,7 @@ def jisuan(a,b):
     print(a / b)
     print(a % b)
 
+# 比较符 完成后 会返回一个bool值 ,只有True 和 False
 def duibi(a,b,c):
     print(a > b)
     print(a < b)
@@ -26,5 +27,5 @@ def deng(a):
     print(a)
 
 if __name__ == '__main__':
-    a = 10
+   duibi(1,2,3)
 

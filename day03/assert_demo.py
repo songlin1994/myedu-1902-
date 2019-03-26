@@ -25,5 +25,5 @@ def zuihou():
 
 
 if __name__ == '__main__':
-    pass
-    zuihou()
+    assert True
+    assert '失败' in '操作成功'

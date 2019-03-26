@@ -31,13 +31,16 @@ def china_demo():
     print(dumps)
 
 if __name__ == '__main__':
-    china_demo()
+    # china_demo()
     # 打印 adict_int 字典中 key 为 1 的值
     # print(adict_int[1])
     # 打印 adict 字典
-    # print(adict)
+    print(adict)
+    # 如何取值 ,变量名 加 [ ],然后中括号内放 key的名字
+    print(adict['name'])
     # 删除 adict 字典 中key为 name 的 值,key 和 value 都会被删除
-    # adict.pop('name')
+    adict.pop('name')
+    print(adict)
     # 打印 adict 字典中 key 为 name 的值
     # print(adict['name'])
 

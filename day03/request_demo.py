@@ -2,17 +2,18 @@
 import requests
 
 def req_demo():
-    # 封装请求参数
+    # 封装请求参数 这是一个字典类型的数据
     data = {"username": "admin", "password": "123456"}
     # 发送请求 带上两个参数 url  和 请求正文 json
     response = requests.post(url='http://192.168.60.132:8080/admin/login', json=data)
-
+    print(type(requests))
+    print(type(response))
     # 获取字符串类型的响应报文
     text_body = response.text
     print(type(text_body))
     print(text_body)
 
-    # 获取响应报文 , 并把报文转换成 字典类型; 报文必须是json 才能转换
+    # 获取响应报文 , response.json() :报文转换成 字典类型; 报文必须是json 才能转换
     json_body = response.json()
     print(type(json_body))
     print(json_body)
