@@ -13,6 +13,8 @@ if __name__ == '__main__':
     # 获取 响应正文 (字典类型)  响应正文 必须是json 格式
     login_resp_json = login_resp.json()
 
+    assert '成功' in login_resp_json['message']
+
     # 取出 响应正文 中 key 为的 message 的 值
     # print(login_resp_json['message'])
     print(login_resp_json)
@@ -37,6 +39,7 @@ if __name__ == '__main__':
     get_order_resp = requests.get(url='http://192.168.60.132:8080/order/list', params=getoder_param)
     print(get_order_resp.json())
     order_json = get_order_resp.json()
+    assert '成功' in order_json['message']
     order_json_data = order_json['data']
     order_json_data_list = order_json_data['list']
     print(type(order_json_data_list))
