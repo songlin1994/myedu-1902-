@@ -22,6 +22,7 @@ class Human(object):
 # 声明一个测试者 类 ,继承 Human 类
 class Tester(Human):
 
+
     # 声明 一个方法
     def zhiXingCeShi(self):
         # 调用了父类的属性
@@ -39,9 +40,9 @@ if __name__ == '__main__':
     human = Human('ysl', 25, '男')
     print(type(human))
     # 对象可使用 类中的方法
-    # human.myInfo()
-    # info_str = human.myInfoStr()
-    # print(info_str)
+    human.myInfo()
+    info_str = human.myInfoStr()
+    print(info_str)
 
     # = 后面 调用了这个类 传入了 初始化的参数 ,参数必须传 ,而且传完整; 之后你会获得一个对象
     # = 前面 是 对象名
