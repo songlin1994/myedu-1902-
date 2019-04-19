@@ -2,13 +2,27 @@
 import requests
 
 if __name__ == '__main__':
+
+    '''
+    多行注释
+    多行注释
+    多行注释
+    '''
+
+    """
+    多行注释
+    多行注释
+    多行注释
+    """
+
+
     # 声明 login_data 变量名 用来存 登录的请求数据
     login_data = {"username": "admin", "password": "123456"}
     #  = 后面就是发起一个请求,使用requests.post方法 ,入参 有两个,url:请求地址,json : 请求数据
     #  = 前面 就是声明一个变量 ,来存方法执行完后 return 的内容
     login_resp = requests.post(url='http://192.168.60.132:8080/admin/login', json=login_data)
     # .text 就是获取响应正文 (str 类型)
-    # print(login_resp.text)
+    print(login_resp.text)
 
     # 获取 响应正文 (字典类型)  响应正文 必须是json 格式
     login_resp_json = login_resp.json()

@@ -10,6 +10,8 @@
 # 代码的层级关系 通过 缩进来表示
 # class 类,类型
 # str string 字符
+# float 小数型
+# list 列表
 # 合法标识符(变量名方法名) : 必须以字母或者_开头,剩下的可以是字母数字,下划线,大小写敏感, 不可用关键字做标识符
 # ctrl+alt+L 格式化代码
 # ctrl+K  commit 代码
@@ -19,10 +21,16 @@ intqq = 50
 
 # 声明一个int_demo 方法
 def int_demo():
+
+    #方法内的代码
+
+
     # 声明aint变量 , 并赋值 1
     aint = 1
     # 打印 aint 的值
     print(aint)
+
+
     # 打印 aint 的 类型; type(aint): 获取aint的类型
     print(type(aint))
 
@@ -86,6 +94,11 @@ def float_demo():
     print(type(afloat))
 
 if __name__ == '__main__':
+
+
+
+
+
     # add(aint=1, bint=2)  调用 add 方法, 传入1(变量aint), 2(变量bint),得到返回值
     # sub =  声明sub 变量 ,并得到赋值,值是add 方法执行完的return 结果
     sub = add(aint=1, bint=2)

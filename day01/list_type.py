@@ -83,6 +83,8 @@ def xiaxie(alist):
 # 列表/集合
 if __name__ == '__main__':
     alist = [4, 'ysl', '8', 7,6,2,5]
+    print(alist[2:5])
+    # alist.append()
     # 这是方法调用了 局部变量 alist
     # list_update(alist)
     # 这个方法调用了 全局变量 blist

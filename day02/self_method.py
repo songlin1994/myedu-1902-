@@ -6,9 +6,7 @@ def list_bianli():
     alist = ['啊', '第三方', '尔尔', '玩儿']
     # 将alist 放入循环, 循环次数由 list 的长度来决定, 第一次循环
     for i in alist:
-        print("--遍历")
         print(i)
-        print(i + '__hello')
 
 def nei_xunhuan():
     for i in range(5):
@@ -16,12 +14,12 @@ def nei_xunhuan():
         for j in range(2):
             print('内循环')
 
-# 打印 九九乘法表
+# 打印 九九乘法表   \n
 def chenfabiao():
     for i in range(1,10):
         for j in range(1,i+1):
             print('%s X %s = %s ' %(i,j,i*j),end=' ')
-        print('     ')
+        print('')
         # print('')
 
 # 基础 if else 语法演示
@@ -52,7 +50,7 @@ def if_demo2():
 
 def elif_demo():
     a = 4
-    if a == 2:
+    if a == 2 :
         print('第1个if')
     elif a == 3:
         print('第2个if')
@@ -87,9 +85,17 @@ def oushu_add(a,b):
 
     print(num)
 
+def yr():
+    for i in range(1,1001):
+        if i%3 ==0 :
+            print(i)
+
 
 
 if __name__ == '__main__':
+
+    yr()
+    # chenfabiao()
     # for : 声明一个for 循环;  i : 循环次数 ; range 函数,只有一个参数: 5 代表 循环 从0开始 到 4结束 (4是根据小于5的最大整数来的)
     # for i in range(5):
     #     print(i)

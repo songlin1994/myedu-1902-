@@ -28,4 +28,8 @@ def read_excel(file):
 
 
 if __name__ == '__main__':
-    read_excel("../test.xlsx")
+    excel = read_excel("../test.xlsx")
+    excel_ = excel[0]
+    print(excel_)
+    excel_.pop('姓名')
+    print(excel_)

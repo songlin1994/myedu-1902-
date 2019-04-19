@@ -41,13 +41,13 @@ def open_demo2():
     # r 代表只读模式 ,不可写入
     text_io = open('../test.text', 'r')
     # 读取第一行
-    # readline = text_io.readline()
+    readline = text_io.readline()
     # print(readline)
     # 读取所有行 返回一个list对象
     readlines = text_io.readlines()
     print(readlines)
     print(type(readlines))
-    print(readlines[1])
+    print(readlines[2])
 
 if __name__ == '__main__':
     # 相对路径 ../test.text

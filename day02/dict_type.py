@@ -3,7 +3,7 @@ import json
 # 声明一个全量 dict 变量 (字典)
 
 adict = {"name":"ysl","pwd":"123456"}
-adict_int = {"name":"ysl","pwd":"123456",1:'数字1'}
+adict_int = {"name1":"ysl","pwd":"126",'1':'数字1'}
 
 # 这是一个字符串 不过他是json 格式 ,也是字典的格式
 adictStr = '{"name":"ysl","pwd":"123456","1":"数字1"}'
@@ -35,15 +35,22 @@ if __name__ == '__main__':
     # 打印 adict_int 字典中 key 为 1 的值
     # print(adict_int[1])
     # 打印 adict 字典
-    print(adict)
+    # print(adict)
     # 如何取值 ,变量名 加 [ ],然后中括号内放 key的名字
-    print(adict['name'])
+    # print(adict['name'])
     # 删除 adict 字典 中key为 name 的 值,key 和 value 都会被删除
-    adict.pop('name')
-    print(adict)
+    # adict.pop('name')
+    # print(adict)
     # 打印 adict 字典中 key 为 name 的值
     # print(adict['name'])
-
+    # 方法入参是元组的时候 要加单星号 *变量名
+    # 方法入参是字典的时候 要加双星号 **变量名
+    # 当 key 相同, value 以参数二 为主
+    d = dict(adict, **adict_int)
+    print(d)
+    # 当 key 相同, value 以()里面的字典 为主
+    adict.update(adict_int)
+    print(adict)
     # str --> dict
     pass
     # dict --> str  字典类型转换为 字符类型
